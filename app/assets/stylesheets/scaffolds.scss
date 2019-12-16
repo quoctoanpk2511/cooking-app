@@ -1,14 +1,5 @@
-body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
-
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif !important;
   font-size: 13px;
   line-height: 18px;
 }
@@ -54,6 +45,11 @@ div {
   padding: 2px;
   background-color: red;
   display: table;
+}
+
+.row {
+  margin-left: 0!important;
+  margin-right: 0!important;
 }
 
 #error_explanation {

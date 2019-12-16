@@ -1,3 +1,55 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Homepage
+
+.main-container {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    min-height: 100vh;
+    background-image: url(hp-background.png);
+    background-size: cover;
+    background-position: center 10%;
+    background-attachment: fixed;
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      padding: 13% 0 0px;
+      font-weight: bolder;
+    }
+    h2 {
+      text-align: center;
+      font-size: 25px;
+      padding: 40px;
+    }
+  }
+  
+  .signup-container {
+    height: 300px;
+    background-color: #a9965e;
+    text-align: center;
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      color: #fff;
+      padding: 3.5%;
+      margin: 0;
+      font-weight: bolder;
+    }
+  }
+  
+  h1 {
+      text-align: center;
+      font-size: 60px;
+      padding: 13% 0 0px;
+      font-weight: bolder;
+    }
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 40px;
+  }
+  
