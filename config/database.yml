@@ -1,0 +1,29 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 14785236Ad!
+  host: 127.0.0.1
+  port: 3306
+
+development:
+  <<: *default
+  database: cooking_app_development
+  username: root
+  password: 14785236Ad!
+  host: 127.0.0.1
+  port: 3306
+
+test:
+  <<: *default
+  database: cooking_app_test
+  username: root
+  password: 14785236Ad!
+  host: 127.0.0.1
+  port: 3306
+
+production:
+  <<: *default
+  database: cooking_app_production
+  username: root
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
