@@ -18,10 +18,22 @@
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "ckeditor" %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
+  
+  <script>
+  $(document).ready(function(){
+    if ($('textarea').length > 0) {
+      var data = $('.ckeditor');
+      $.each(data, function(i) {
+        CKEDITOR.replace(data[i].id)
+      });
+    }
+  });
+
+  </script>
 <% end %>
