@@ -20,7 +20,11 @@
     <%= form.label :description %>
     <%= form.text_area :description, class: "ckeditor" %>
   </div>
-
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :image_url %>
+  </div>
+ 
   <div class="actions">
     <%= form.submit %>
   </div>

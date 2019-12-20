@@ -17,6 +17,7 @@ gem 'omniauth'
 gem 'omniauth-facebook', '5.0.0'
 
 gem 'jquery-rails'
+
 # Use cloudinary
 gem 'cloudinary','~>1.13.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
