@@ -3,9 +3,19 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+# Ckeditor
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'ckeditor'
+
+# Google map
+gem 'gmaps4rails'
+
+# Facebook login
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook', '5.0.0'
+
 gem 'jquery-rails'
 # Use cloudinary
 gem 'cloudinary','~>1.13.1'
