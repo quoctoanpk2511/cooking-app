@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 2019_12_19_175541) do
     t.text "description"
     t.string "time"
     t.string "image"
+    t.bigint "user_id"
+    t.bigint "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
