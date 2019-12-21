@@ -20,6 +20,7 @@ gem 'omniauth'
 gem 'omniauth-facebook', '5.0.0'
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
 # Use cloudinary
 gem 'cloudinary','~>1.13.1'
