@@ -25,6 +25,11 @@
         <%= form.label :description, class: "control-label mb-1" %>
         <%= form.text_area :description, class: "form-control ckeditor" %>
       </div>
+    
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :image_url, direct_upload: true%>
+  </div>
 
       <button type="submit" class="btn btn-lg btn-info">Submit</button>
       
