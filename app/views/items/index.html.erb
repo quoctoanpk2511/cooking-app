@@ -27,7 +27,7 @@
                             <td><%= item.name %></td>
                             <td><%= item.description %></td>
                             <td><%= item.time %></td>
-                            <td><%= item.image %></td>
+                            <td><%= image_tag item.image_url , width: '52', height: '52' %></td>
                             <td><%= item.category.title %></td>
                             <td><%= link_to 'Show', item %></td>
                             <td><%= link_to 'Edit', edit_item_path(item) %></td>
