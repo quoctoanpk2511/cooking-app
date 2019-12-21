@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+# Multi language
+gem 'rails-i18n'
+
 # Ckeditor
 gem 'mini_magick'
 gem 'carrierwave'

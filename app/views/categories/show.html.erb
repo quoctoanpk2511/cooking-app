@@ -4,7 +4,7 @@
       <div class="col-md-8">
         <h2><%= @category.title %> - <%= @category.items.count %> recipes</h2>
         <div class="category-info">
-          <%= image_tag(@category.image_url, alt: @category.title, width: '150', height: '150', class: 'my-4 d-inline-block') %>
+          <%= image_tag(@category.image_url, alt: @category.title, width: '170', class: 'my-4 d-inline-block') %>
           <div class="ml-4 d-inline-block"><%= raw @category.description %></div>
         </div>
         
