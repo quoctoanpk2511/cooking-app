@@ -10,7 +10,6 @@
   <%= raw @category.description %>
 </p>
 <strong>Image:</strong>
-<img src="<%= @category.image_url %>" />
-
+<%= image_tag @category.image_url , width: '52', height: '52' %>
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
