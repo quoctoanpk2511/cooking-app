@@ -11,6 +11,9 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def dashboard
+  end
+
   def search
     if params[:search].blank?  
       @results = []
