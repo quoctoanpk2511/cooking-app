@@ -7,6 +7,12 @@
 
         <h2 class="mb-4"><%= @item.name %></h2>
         <span class="mb-4 d-block"><%= @item.description %></span>
+        <h3>Recipes</h3>
+        <% @item.recipes.each do |recipe| %>
+          <div class="mb-4 d-block">
+            <span class="mb-4 d-block"><%= recipe.description %></span>
+          </div>
+        <% end %>
         <div class="item-time">
           <span class=" d-block">Time: <%= @item.time %></span>
         </div>

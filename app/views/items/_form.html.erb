@@ -36,6 +36,13 @@
           <%= form.file_field :image_url, direct_upload: true %>
         </div>
 
+        <div class="form-group" id="recipes">
+          <%= form.fields_for :recipes do |recipe| %>
+            <%= render "recipe_fields", f: recipe %>
+          <% end %>
+
+        </div>
+
         <div class="form-group">
           <%= form.label :category_id, class: "control-label mb-1" %>
           <%= form.collection_select :category_id, Category.all, :id, :title, {}, {class: "form-control"} %>
@@ -47,3 +54,24 @@
       <% end %>
     </div>
   </div>
+
+  # <script>
+  #   $(document).ready(function() {
+      
+  #     $('#recipes')
+  #       .on('cocoon:before-insert', function(e, el_to_add) {
+  #         $('.count').hide()
+  #         el_to_add.fadeIn(1000)
+  #       })
+  #       .on('cocoon:after-insert', function(e, added_el) {
+  #         $('.count').hide()
+  #       })
+  #       .on('cocoon:before-remove', function(e, el_to_remove) {
+  #         $('.count').hide()
+  #         $(this).data('remove-timeout', 1000)
+  #         el_to_remove.fadeOut(1000)
+  #       })
+  #       .on('cocoon:after-remove', function(e, removed_el) {
+  #       });
+  #   });
+  # </script>

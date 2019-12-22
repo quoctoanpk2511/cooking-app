@@ -16,6 +16,7 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+    @item.recipes.build
   end
 
   # GET /items/1/edit
@@ -71,7 +72,7 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:name, :description, :time, :image_url, :category_id, :user_id)
+      params.require(:item).permit(:name, :description, :time, :image_url, :category_id, :user_id, recipes_attributes: [:id, :description, :_destroy])
     end
 
     def admin_logged_in
